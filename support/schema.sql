@@ -12,7 +12,7 @@ CREATE TABLE students (
 );
 
 CREATE TABLE schools (
- is SERIAL PRIMARY KEY,
+ id SERIAL PRIMARY KEY,
  name TEXT NOT NULL,
  address TEXT NOT NULL
 );
