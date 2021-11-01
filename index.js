@@ -26,11 +26,9 @@ express()
      const local = {
       'tasks': (tasks) ? tasks.rows : null
      };
+	   
      res.render('pages/index', locals);
      client.release();
-
-     client.release();
-     res.send("Works");
    }
    catch(err) {
      console.error(err);
