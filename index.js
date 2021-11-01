@@ -21,7 +21,7 @@ express()
      const client = await pool.connect();
 
      const tasks = await client.query(
-'SELECT * FROM tasks ORDER BY id ASC');
+`SELECT * FROM tasks ORDER BY id ASC`);
 
      const local = {
       'tasks': (tasks) ? tasks.rows : null
