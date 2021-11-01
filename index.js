@@ -65,7 +65,7 @@ const obs = await client.query(`SELECT * FROM observations`);
 })
 .post('/log', async(req, res) => {
  try {
- const client = await pool.context();
+ const client = await pool.connect();
  const usersId = req.body.users_id;
  const studentsId = req.body.students_id;
  const tasksId = req.body.tasks_id;
