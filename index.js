@@ -73,7 +73,7 @@ const obs = await client.query(`SELECT * FROM observations`);
 
  const sqlInsert= await client.query(
 `INSERT INTO observations (users_id, students_id, tasks_id, duration)
-VALUES (${userId}, ${studentsId}, ${tasksId}, ${duration})
+VALUES (${usersId}, ${studentsId}, ${tasksId}, ${duration})
 RETURNING id as new_id;`);
   console.log(`Tracking task ${tasksId}`);
 
