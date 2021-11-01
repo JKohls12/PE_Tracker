@@ -81,7 +81,7 @@ RETURNING id as new_id;`);
    'response': (sqlInsert) ? (sqlInsert.rows[0]) : null
   };
   res.set({'Content-Type': 'application/json'});
-  res.json({ request: result });
+  res.json({ requestBody: result });
   client.release();
  }
  catch (err) {
