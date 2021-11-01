@@ -67,7 +67,7 @@ const obs = await client.query(`SELECT * FROM observations`);
  try {
  const client = await pool.conntext();
  const usersId = req.body.users_id;
- const studentsId = req.bodystudents_id;
+ const studentsId = req.body.students_id;
  const tasksId = req.body.tasks_id;
  const duration = req.body.duration;
 
