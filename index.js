@@ -23,7 +23,7 @@ express()
      const tasks = await client.query(
 `SELECT * FROM tasks ORDER BY id ASC`);
 
-     const local = {
+     const locals = {
       'tasks': (tasks) ? tasks.rows : null
      };
 	   
