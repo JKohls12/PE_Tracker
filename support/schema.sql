@@ -30,4 +30,5 @@ CREATE TABLE tasks (
  name TEXT NOT NULL
 );
 
-INSERT INTO tasks (name) VALUES ('Planned Pres.'), ('Response Pres.');
+INSERT INTO tasks (name) VALUES ('Planned Pres.'),
+('Response Pres.');
