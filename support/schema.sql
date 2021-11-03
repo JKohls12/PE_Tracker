@@ -31,3 +31,4 @@ CREATE TABLE tasks (
 );
 
 INSERT INTO tasks (name) VALUES ('Planned Pres.');
+INSERT INTO tasks (name) VALUES ('Response Pres.');
