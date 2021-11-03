@@ -9,8 +9,8 @@
  <% tasks.forEach(function(r) {%>
   <button id='<%= r.id %>'
    onClick='javascript:logTask(<%= r.id %>);'><%= r.name %></button>
-    <button id='<%= r.id[1] %>'
-   onClick='javascript:logTask(<%= r.id[1] %>);'><%= r.name[1] %></button>
+    <button id='<%= r.id %>'
+   onClick='javascript:logTask(<%= r.id %>);'><%= r.name[1] %></button>
     
  <% }); %>
  <script>
